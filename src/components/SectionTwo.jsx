@@ -53,11 +53,11 @@ function SectionTwo() {
     ];
   return (
     <>
-    <section className='mx-auto grid grid-cols-12'>
+    <section className='mx-auto gap-10 grid grid-cols-12'>
         {data.map((details, i) => (
-            <div key={i} className='flex flex-col justify-center items-center col-span-4 sm:col-span-3 lg:col-span-1 mt-7'>
-                <img src={details.img} alt="" />
-                <p className='mt-2'>{details.text}</p>
+            <div key={i} className='flex flex-col justify-center items-center col-span-4 sm:col-span-3 lg:col-span-1 mt-7 hover:text-[#a96331] cursor-pointer hover:scale-105 hover:invert delay-200'>
+                <img className='text-[#569CCE]' src={details.img} alt="" />
+                <p className='mt-2 text-sm md:text-base'>{details.text}</p>
             </div>
         ))}
     </section>

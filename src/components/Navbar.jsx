@@ -3,7 +3,7 @@ import React from "react";
 function Navbar() {
   return (
     <>
-      <div className="navbar bg-base-100 py-7 px-0 sm:px-8 mx-auto flex justify-between items-center border-b">
+      <div className="navbar bg-base-100 py-7 px-4 sm:px-8 mx-auto flex justify-between items-center border-b">
         <div className="navbar-start">
           <a className="cursor-pointer">
             <img src="logo.png" alt="" />

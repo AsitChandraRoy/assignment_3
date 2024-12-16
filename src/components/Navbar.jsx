@@ -3,7 +3,7 @@ import React from "react";
 function Navbar() {
   return (
     <>
-      <div className="navbar bg-base-100 py-7 px-0 sm:px-8 mx-auto flex justify-between items-center">
+      <div className="navbar bg-base-100 py-7 px-0 sm:px-8 mx-auto flex justify-between items-center border-b">
         <div className="navbar-start">
           <a className="cursor-pointer">
             <img src="logo.png" alt="" />
@@ -55,7 +55,7 @@ function Navbar() {
               <button className="btn mt-3 text-white bg-[#1677bd]">search</button>
               <div className="gap-2 flex">
                 <img src="earth.png" alt="" />
-                <a className="btn  bg-[#1E1E1E] rounded-full px-8 text-[15.5px] font-normal hover:bg-slate-700 text-[#ffffff]">
+                <a className="btn  bg-[#1E1E1E] rounded-full px-4 sm:px-8 text-xs sm:text-[15.5px] font-normal hover:bg-slate-700 text-[#ffffff]">
                   MyFeedback for business
                 </a>
               </div>

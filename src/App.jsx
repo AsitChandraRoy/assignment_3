@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import SectionTwo from "./components/SectionTwo";
 import Hero from "./components/Hero";
 import LatestTrends from "./components/LatestTrends";
+import MyFeedback from "./components/MyFeedback";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <SectionTwo />
       <Hero />
       <LatestTrends />
+      <MyFeedback />
     </>
   );
 }

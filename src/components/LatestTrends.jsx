@@ -138,7 +138,7 @@ function LatestTrends() {
         </div>
         <div className="flex flex-col justify-center items-center py-7">
           <h3 className="text-[22px] font-Lexend mb-2">Discover more cool restaurants</h3>
-          <div className="btn bg-[#1677bd] text-[#ffffff] text-[19px] rounded-full text-center px-8">
+          <div className="btn bg-[#1677bd] text-[#ffffff] text-[19px] rounded-full text-center px-8 hover:bg-[#439ad7]">
             Show more
           </div>
         </div>

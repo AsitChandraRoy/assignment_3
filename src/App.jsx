@@ -6,6 +6,7 @@ import Hero from "./components/Hero";
 import LatestTrends from "./components/LatestTrends";
 import MyFeedback from "./components/MyFeedback";
 import RecentActivities from "./components/RecentActivities";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <LatestTrends />
       <MyFeedback />
       <RecentActivities />
+      <Footer />
     </>
   );
 }

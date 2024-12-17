@@ -24,7 +24,7 @@ function Hero() {
       img: "bottega4.png",
       title: "Bottega",
       des: "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
-      reviews: "2.0 (876 reviews)",
+      reviews: "5.0 (876 reviews)",
     },
   ];
   return (

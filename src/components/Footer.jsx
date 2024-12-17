@@ -10,7 +10,7 @@ function Footer() {
             <p className="text-[#5E5E5E] text-sm mt-2 ">About MyFeedback</p>
             <p className="text-[#5E5E5E] text-sm mt-2 ">Investor Relations</p>
           </div>
-          <div className="col-span-12 sm:col-span-4 justify-self-center">
+          <div className="col-span-12 sm:col-span-4 justify-self-center ms-11 sm:ms-0">
             <h3 className="text-[#1E1E1E] text-xl font-extrabold ">
               MyFeedback
             </h3>
@@ -24,7 +24,7 @@ function Footer() {
             <p className="text-[#5E5E5E] text-sm mt-2 ">Support</p>
             <p className="text-[#5E5E5E] text-sm mt-2 ">Developers</p>
           </div>
-          <div className="col-span-12 sm:col-span-4 justify-self-center sm:-mt-[110px] mt-0">
+          <div className="col-span-12 sm:col-span-4 justify-self-center sm:-mt-[110px] mt-0 -ms-4 sm:ms-0">
             <h3 className="text-[#1E1E1E] text-xl font-extrabold ">
               Languages
             </h3>

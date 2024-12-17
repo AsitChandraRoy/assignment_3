@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
   theme: {
     extend: {
@@ -7,5 +7,7 @@ export default {
         Lexend: '"Roboto", sans-serif' },
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [
+    require('daisyui'),
+  ],
 };

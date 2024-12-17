@@ -52,7 +52,7 @@ function Navbar() {
             <li>
               <input type="text" placeholder="restaurant, hotel, service...." />
               <input type="text" placeholder="Singapour..." />
-              <button className="btn mt-3 text-white bg-[#1677bd]">search</button>
+              <button className="btn mt-3 text-white bg-[#1677bd] hover:bg-[#44abf4]">search</button>
               <div className="gap-2 flex">
                 <img src="earth.png" alt="" />
                 <a className="btn  bg-[#1E1E1E] rounded-full px-4 sm:px-8 text-xs sm:text-[15.5px] font-normal hover:bg-slate-700 text-[#ffffff]">

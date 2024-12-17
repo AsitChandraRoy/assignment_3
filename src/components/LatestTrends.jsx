@@ -81,7 +81,7 @@ function LatestTrends() {
         <h1 className="text-[32px] font-extrabold font-Lexend py-3">
           The latest trends
         </h1>
-        <div className=" grid grid-cols-12 justify-between gap-4 my-">
+        <div className=" grid grid-cols-12 justify-between gap-4">
           {cardData.map((details, i) => (
             <div
               className="card bg-[#F8F8F8] col-span-12 md:col-span-6 lg:col-span-3 gap-3 my-2"

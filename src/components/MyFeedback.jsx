@@ -3,6 +3,7 @@ import React from 'react'
 function MyFeedback() {
   return (
     <>
+        <div className='bg-[#F2F2F2]'>
         <section className="px-5 sm:px-11 py-7 mx-auto">
             <div className='grid grid-cols-12'>
                 <div className='col-span-12 lg:col-span-6 mx-auto flex flex-col justify-center items-start '>
@@ -15,6 +16,7 @@ function MyFeedback() {
                 </div>
             </div>
         </section>
+        </div>
     </>
   )
 }

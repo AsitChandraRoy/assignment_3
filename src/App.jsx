@@ -7,17 +7,21 @@ import LatestTrends from "./components/LatestTrends";
 import MyFeedback from "./components/MyFeedback";
 import RecentActivities from "./components/RecentActivities";
 import Footer from "./components/Footer";
+import Example from "./components/Example";
+import BestRestaurants from "./components/BestRestaurants";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <SectionTwo />
+      {/* <Navbar /> */}
+      {/* <SectionTwo />
       <Hero />
       <LatestTrends />
       <MyFeedback />
       <RecentActivities />
-      <Footer />
+      <Footer /> */}
+      {/* <Example /> */}
+      <BestRestaurants />
     </>
   );
 }

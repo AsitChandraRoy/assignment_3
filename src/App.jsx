@@ -11,6 +11,7 @@ import Example from "./components/Example";
 import BestRestaurants from "./components/BestRestaurants";
 import BellaItalia from "./components/BellaItalia";
 import ModalOne from "./components/ModalOne";
+import ModalTwo from "./components/ModalTwo";
 
 function App() {
   return (
@@ -25,7 +26,8 @@ function App() {
       {/* <Example /> */}
       {/* <BestRestaurants /> */}
       {/* <BellaItalia /> */}
-      <ModalOne />
+      {/* <ModalOne /> */}
+      <ModalTwo />
     </>
   );
 }

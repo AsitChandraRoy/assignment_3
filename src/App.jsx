@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import Example from "./components/Example";
 import BestRestaurants from "./components/BestRestaurants";
 import BellaItalia from "./components/BellaItalia";
+import ModalOne from "./components/ModalOne";
 
 function App() {
   return (
@@ -23,7 +24,8 @@ function App() {
       <Footer /> */}
       {/* <Example /> */}
       {/* <BestRestaurants /> */}
-      <BellaItalia />
+      {/* <BellaItalia /> */}
+      <ModalOne />
     </>
   );
 }

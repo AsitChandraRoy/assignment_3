@@ -23,7 +23,7 @@ function ModalTwo() {
                 " alt="" />
                 <div className="flex flex-col justify-center items-center mt-2">
                     <h1 className="text-[32px] font-semibold">Menu Bella Italia</h1>
-                    <div className="flex justify-center items-center gap-3 mt-4 border-2 border-[#1677BD] py-1 px-4 rounded-full">
+                    <div className="flex justify-center items-center gap-3 mt-4 border-2 border-[#1677BD] py-1 px-4 rounded-full cursor-pointer">
                         <img src="download.png" alt="" />
                         <p className="text-[19px] font-medium">Dowload this menu</p>
                     </div>

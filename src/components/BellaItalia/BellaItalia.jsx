@@ -1,6 +1,4 @@
 import React from "react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
 
 function BellaItalia() {
   const cardData = [
@@ -78,10 +76,9 @@ function BellaItalia() {
       des: "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
       reviews: "2.0 (876 reviews)",
     },
-  ]
+  ];
   return (
     <>
-      <Navbar />
       <section>
         <div className="px-5 lg:px-24">
           <h4 className="text-[#232323] text-[16px] font-semibold py-3 ">
@@ -158,21 +155,138 @@ function BellaItalia() {
           </div>
           <div className="grid grid-cols-12 gap-10 pt-8 mx-auto">
             <div className="col-span-12 md:col-span-6">
-              <img className="w-[100%] h-auto " src="discover1.png" alt="" />
+              <button
+                className="btn"
+                onClick={() =>
+                  document.getElementById("my_modal_3").showModal()
+                }
+              >
+                <img className="w-[100vw] h-auto " src="discover1.png" alt="" />
+              </button>
+              <dialog id="my_modal_3" className="modal">
+                <div className="modal-box">
+                  <form method="dialog">
+                    {/* if there is a button in form, it will close the modal */}
+                    <button className="btn btn-sm btn-circle bg-white absolute right-0 top-0">
+                      ✕
+                    </button>
+                  </form>
+                  <div className="carousel w-full">
+                    <div id="slide1" className="carousel-item relative w-full">
+                      <img
+                        src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
+                        className="w-full"
+                      />
+                      <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide4" className="btn btn-circle">
+                          ❮
+                        </a>
+                        <a href="#slide2" className="btn btn-circle">
+                          ❯
+                        </a>
+                      </div>
+                    </div>
+                    <div id="slide2" className="carousel-item relative w-full">
+                      <img
+                        src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
+                        className="w-full"
+                      />
+                      <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide1" className="btn btn-circle">
+                          ❮
+                        </a>
+                        <a href="#slide3" className="btn btn-circle">
+                          ❯
+                        </a>
+                      </div>
+                    </div>
+                    <div id="slide3" className="carousel-item relative w-full">
+                      <img
+                        src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
+                        className="w-full"
+                      />
+                      <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide2" className="btn btn-circle">
+                          ❮
+                        </a>
+                        <a href="#slide4" className="btn btn-circle">
+                          ❯
+                        </a>
+                      </div>
+                    </div>
+                    <div id="slide4" className="carousel-item relative w-full">
+                      <div>
+                        <button className="btn" onClick={() => document.getElementById("my_modal_3").showModal()}>
+                          <div>
+                            {/* Your modal image */}
+                            <img
+                              src="modal.png"
+                              className="w-full"
+                              alt="Modal"
+                            />
+                          </div>
+                        </button>
+
+                        {/* Modal */}
+
+                          <dialog id="my_modal_3" className="modal">
+                            <div className="modal-box">
+                              <form method="dialog">
+                                {/* Close button */}
+                                <button
+                                  className="btn btn-sm btn-circle btn-ghost absolute right-0 top-0"
+                                  type="button"
+
+                                >
+                                  ✕
+                                </button>
+                              </form>
+                              <div>
+                                <img src="menu.png" alt="Menu" />
+                                <div className="flex flex-col justify-center items-center mt-2">
+                                  <h1 className="text-[32px] font-semibold">
+                                    Menu Bella Italia
+                                  </h1>
+                                  <div className="flex justify-center items-center gap-3 mt-4 border-2 border-[#1677BD] py-1 px-4 rounded-full cursor-pointer">
+                                    <img src="download.png" alt="Download" />
+                                    <p className="text-[19px] font-medium">
+                                      Download this menu
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </dialog>
+
+                      </div>
+                      <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide3" className="btn btn-circle">
+                          ❮
+                        </a>
+                        <a href="#slide1" className="btn btn-circle">
+                          ❯
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <img src="popImages.png" alt="" />
+                </div>
+              </dialog>
             </div>
+
             <div className="col-span-12 md:col-span-6 grid grid-cols-12">
               <div className="col-span-6 gap-2">
-                <img className="w-[88.2%] h-auto " src="discover2.png" alt="" />
+                <img className="w-[84%] h-auto " src="discover2.png" alt="" />
                 <img
-                  className="w-[88.2%] h-auto mt-10"
+                  className="w-[84%] h-auto mt-10"
                   src="discover4.png"
                   alt=""
                 />
               </div>
               <div className="col-span-6 gap-2">
-                <img className="w-[88.2%] h-auto " src="discover3.png" alt="" />
+                <img className="w-[84%] h-auto " src="discover3.png" alt="" />
                 <img
-                  className="w-[88.2%] h-auto mt-10"
+                  className="w-[84%] h-auto mt-10"
                   src="discover5.png"
                   alt=""
                 />
@@ -353,63 +467,62 @@ function BellaItalia() {
         <div className="px-5 lg:px-28 mx-auto mt-5 pb-12">
           <h1 className="text-[32px] font-extrabold">Also discover...</h1>
           <div className=" grid grid-cols-12 justify-between gap-4">
-          {cardData1.map((details, i) => (
-            <div
-              className="card bg-[#F8F8F8] col-span-12 md:col-span-6 lg:col-span-4 gap-3 my-2"
-              key={i}
-            >
-              <figure>
-                <img
-                  className="w-[100%] h-auto"
-                  src={details.img}
-                  alt="Shoes"
-                />
-              </figure>
-              <div className="p-3">
-                <h2 className="card-title text-[19px] font-semibold">
-                  {details.title}
-                </h2>
-                <p className="text-sm text-[#8F8F8F]">{details.des}</p>
-                <div className="card-actions flex justify-between items-center mt-5">
-                  <div className=" text-[0.01px]">
-                    <div className="rating mb-1">
-                      <input
-                        type="radio"
-                        name="rating-2"
-                        className="mask mask-star-2 bg-orange-400"
-                      />
-                      <input
-                        type="radio"
-                        name="rating-2"
-                        className="mask mask-star-2 bg-orange-400"
-                        defaultChecked
-                      />
-                      <input
-                        type="radio"
-                        name="rating-2"
-                        className="mask mask-star-2 bg-orange-400"
-                      />
-                      <input
-                        type="radio"
-                        name="rating-2"
-                        className="mask mask-star-2 bg-orange-400"
-                      />
-                      <input
-                        type="radio"
-                        name="rating-2"
-                        className="mask mask-star-2 bg-orange-400"
-                      />
+            {cardData1.map((details, i) => (
+              <div
+                className="card bg-[#F8F8F8] col-span-12 md:col-span-6 lg:col-span-4 gap-3 my-2"
+                key={i}
+              >
+                <figure>
+                  <img
+                    className="w-[100%] h-auto"
+                    src={details.img}
+                    alt="Shoes"
+                  />
+                </figure>
+                <div className="p-3">
+                  <h2 className="card-title text-[19px] font-semibold">
+                    {details.title}
+                  </h2>
+                  <p className="text-sm text-[#8F8F8F]">{details.des}</p>
+                  <div className="card-actions flex justify-between items-center mt-5">
+                    <div className=" text-[0.01px]">
+                      <div className="rating mb-1">
+                        <input
+                          type="radio"
+                          name="rating-2"
+                          className="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                          type="radio"
+                          name="rating-2"
+                          className="mask mask-star-2 bg-orange-400"
+                          defaultChecked
+                        />
+                        <input
+                          type="radio"
+                          name="rating-2"
+                          className="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                          type="radio"
+                          name="rating-2"
+                          className="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                          type="radio"
+                          name="rating-2"
+                          className="mask mask-star-2 bg-orange-400"
+                        />
+                      </div>
                     </div>
+                    <div className="text-sm">{details.reviews}</div>
                   </div>
-                  <div className="text-sm">{details.reviews}</div>
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 }

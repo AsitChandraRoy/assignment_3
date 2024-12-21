@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./Navbar";
+import { NavLink } from "react-router-dom";
 
 function BestRestaurants() {
   const cardData = [
@@ -62,8 +62,7 @@ function BestRestaurants() {
   ];
   return (
     <>
-      <Navbar />
-      <section className="ps-5 lg:ps-20">
+      <section className="ps-5 lg:ps-20 border-t-8 -mt-1 border-t-white">
         <div className="grid grid-cols-12">
           <div className="col-span-12 lg:col-span-6">
             <p className="text-[16px] font-semibold ">Home / All restaurants</p>
@@ -71,15 +70,13 @@ function BestRestaurants() {
               <h1 className="text-[32px] font-extrabold ">
                 best restaurants in singapore
               </h1>
-
-              {/* You can open the modal using document.getElementById('ID').showModal() method */}
               <button
                 className=""
                 onClick={() =>
                   document.getElementById("my_modal_3").showModal()
                 }
               >
-                <div className="flex justify-start items-center gap-2 border-[1.5px] border-[#5E5E5E] rounded-full px-5 py-2 ">
+                <div className="flex justify-start items-center gap-2 border-[1.5px] border-[#5E5E5E] rounded-full px-5 pe-10 sm:pe-5 py-2 ">
                   <img src="sort1.png" alt="" />
                   <p className="text-[17px] font-medium ">Sort</p>
                 </div>
@@ -87,7 +84,6 @@ function BestRestaurants() {
               <dialog id="my_modal_3" className="modal">
                 <div className="modal-box">
                   <form method="dialog">
-                    {/* if there is a button in form, it will close the modal */}
                     <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
                       ✕
                     </button>
@@ -97,11 +93,8 @@ function BestRestaurants() {
                   <p className="text-[#5D5D5D] text-[17px] ">oldest rated</p>
                 </div>
               </dialog>
-              {/* <div className='flex justify-start items-center gap-2 border-[1.5px] border-[#5E5E5E] rounded-full px-5 py-2'>
-                            <img src="sort1.png" alt="" />
-                            <p className='text-[17px] font-medium '>Sort</p>
-                        </div> */}
             </div>
+            <NavLink to="/bella">
             {cardData.map((card, i) => (
               <div key={i} className="flex justify-start gap-2 border-b py-5">
                 <img src={card.img} alt="" />
@@ -137,9 +130,13 @@ function BestRestaurants() {
                 </div>
               </div>
             ))}
+            </NavLink>
+            <div className=" border-t-8 -mt-1 border-t-white">
+
             <button className="btn bg-[#1677BD] hover:bg-[#2795e3] text-[#ffffff] text-[19px] rounded-full px-7 mt-4 lg:mb-20 mb-5">
               Show more
             </button>
+            </div>
           </div>
           <div className="col-span-12 lg:col-span-6 flex py-5 lg:py-0 lg:justify-end">
             <img
